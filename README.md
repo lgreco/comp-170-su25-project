@@ -1,47 +1,36 @@
 
-# COMP 170 SU25 WEEK 07
+# COMP 170 SU25 Final Project
 
-This assignment has two parts: a coding part based on current material we discuss in class and a reflection part to evaluate work you have already submitted.
+## Scope
+Build an application to manage contact information about your friends. The application should provide a menu with the following functions.
+```text
+1 - Create new friend record
+2 - Search for a friend
+3 - Run reports
+4 - Exit
+```
 
+### Options for menu 1
+You can create a new record for a single person, by manually entering their information in the application. Or, you may load data for multiple friends from a [csv file](https://en.wikipedia.org/wiki/Comma-separated_values).
 
-## Finals week policy
+### Options for menu 2
+If a friend is found, the user should have the option to edit the friend's record or delete it. Deletion should be a 2-step process.
 
-There is no final exam for the course. There will be a final assignemnt that will be published the week before finals and will be due the week of finals. Additionally, 8 students in the course will be invited randomly to a brief meeting with the instructor during the course's final exam slot. The final exam slot for this course is on Tuesday, August 5, 2025 from 11 AM to 1 PM. If you are selected for a brief meeting, we'll spend about 15 minutes during the final exam slot to review your work. This interview will cover coding practices based on your past assignments. It is meant as a checkpoint to ensure that you have internalized the work you submitted.
+### Options for menu 3
+The application should offer the following reports
+```text
+3.1 - List of friends alphabetically
+3.2 - List of friends by upcoming birthdays
+3.3 - Mailing labels for friends
+3.9 - Return to the previous menu
+```
 
+## Requirements
 
-## Code
-
-This assignment will give you practice with abstracting objects into superclasses. Review the code in classes `Vehicles.py` and `Ales.py`. Observe the redundancy and try to manage it by writing the corresponding superclasses and then use them to define the subclasses accordingly.
-
-Write your code in files `SuperVehicles.py` and `SuperAles.py` respectively. 
-
-
-## Code requirements
-* Methods that return a value should have one and only one `return` statement. Multiple `return` statements are not allowed.
-* Methods with `print` statements should not have a `return` statement.
-* The following commands should **not** be used: `import`, `break`, `continue`.
-
-
-## Reflect
-
-Review the posted [solutions from the previous assignment](./solutions_week06.py). Compare the posted solutions with your solutions. Notice the differences between your code and the solutions code and describe them. Trivial differences like the names of variables are not that important.
-
-### Frequent mistakes expected at this point
-
-* **Your methods have multiple return.** This usually happens with AI-generated code or with code found online. There is nothing wrong with using these resoruces *as long as you study the code you find, understand how it works, and adjust it to meet the assignemnt specifications.*
-
-* **Code has no comments** to demonstrate mastery of the program.
-
-* **Code does not produce correct outputs** because it was not tested after completed.
-
-* **Code uses excessive logic** which may be the sign of AI-generated programs.
-
-* **Code does not include type hints (annotations).** This is also typical with solutions found online or are AI-generated.
-
-
-### Read more about:
-
-* [Type hints in Python](https://docs.python.org/3/library/typing.html); also useful [cheat sheet](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html#functions)
-* [f-strings in Python](https://docs.python.org/3/tutorial/inputoutput.html#tut-f-strings)
-* [lists in Python](https://docs.python.org/3/tutorial/datastructures.html). Also chapters 7.1 and 7.2 of the textbook.
-* [the for statement](https://docs.python.org/3/reference/compound_stmts.html#for) and [for loop over a list in Python](https://docs.python.org/3/tutorial/controlflow.html#for-statements). Also chapter 2.3 and 7.1 of the textbook.
+* Code must be based on class `Friend`.
+* Code must be modular (multiple cooperating `.py` files)
+* You may import modules you develop or improve (for example `import Friends`). For any other imports you must first obtain instructor's permission.
+* Use of some basic text decoration would be nice: bold fonts, colored fonts etc. (You may need to learn how to use ANSI codes for such decorations.)
+* When you turn on the application, the records of the friends must be loaded from a file called `friends_database.csv`.
+* The records of the friends must be saved in a file called `friends_database.csv` every time you exit the application.
+* Duplicate entries are allowed -- for example you may have two records for the same friend. Not a good idea, but managing duplicates adds complexity to the project that is best to avoid.
