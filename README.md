@@ -31,7 +31,7 @@ The application should offer the following reports
 
 * Code must be based on classes `Person` and `Birthday`.
 * Code must be modular (multiple cooperating `.py` files)
-* You may import modules you develop or improve (for example `import Friends`). For any other imports you must first obtain instructor's permission.
+* You may import modules you develop or improve (for example `import Person`). For any other imports you must first obtain instructor's permission.
 * Use of some basic text decoration would be nice: bold fonts, colored fonts etc. (You may need to learn how to use ANSI codes for such decorations.)
 * When you turn on the application, the records of the friends must be loaded from a file called `friends_database.csv`.
 * The records of the friends must be saved in a file called `friends_database.csv` every time you exit the application.
