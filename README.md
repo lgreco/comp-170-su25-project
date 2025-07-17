@@ -29,7 +29,7 @@ The application should offer the following reports
 
 ## Requirements
 
-* Code must be based on class `Friend`.
+* Code must be based on classes `Person` and `Birthday`.
 * Code must be modular (multiple cooperating `.py` files)
 * You may import modules you develop or improve (for example `import Friends`). For any other imports you must first obtain instructor's permission.
 * Use of some basic text decoration would be nice: bold fonts, colored fonts etc. (You may need to learn how to use ANSI codes for such decorations.)
