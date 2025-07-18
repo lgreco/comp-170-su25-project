@@ -14,8 +14,6 @@ class Person:
         self.birthday = None
         self.email_address = None
         self.nickname = None
-        self.birthday_month = 0
-        self.birthday_day = 0
         self.street_address = None
         self.city = None
         self.state = None
